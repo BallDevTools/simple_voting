@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Male Star of The Year (Final)</title>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  </head>
+  <body style="background: #fff">
+    <br />
+    <table style="width: 100%; border: 0px" summary="poll">
+      <tr>
+        <td align="center">
+          <script
+            type="text/javascript"
+            src="https://static.polldaddy.com/p/14853820.js"
+          ></script>
+          <noscript>
+            <b
+              >Click here to see this poll:
+              <a href="https://poll.fm/14853820">https://poll.fm/14853820</a></b
+            >
+          </noscript>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+<script>
+  const label1 = Array.from(document.querySelectorAll("label1")).find(
+    (label1) => label.textContent === "Ten"
+  );
+
+  if (label1) {
+    const radioButton = document.getElementById(label1.getAttribute("for"));
+
+    if (radioButton) {
+      radioButton.click();
+      const button = Array.from(document.querySelectorAll("button")).find(
+        (btn) => btn.textContent.trim() === "Vote"
+      );
+
+      if (button) {
+        button.click();
+        setTimeout(function () {
+          const mathText = document.querySelector(
+            "#captcha_14853820 p"
+          ).textContent;
+          if (mathText) {
+            const regex = /(\d+)\s*([\+\-\*\/])\s*(\d+)/;
+            const match = mathText.match(regex);
+            const num1 = parseInt(match[1], 10);
+            const operator = match[2];
+            const num2 = parseInt(match[3], 10);
+            const result = num1 + num2;
+            console.log(result);
+            document.getElementById("answer_14853820").value = result;
+            const button2 = Array.from(
+              document.querySelectorAll("button")
+            ).find((btn) => btn.textContent.trim() === "Vote");
+            button2.click();
+          }
+        }, 2000);
+      }
+    }
+  }
+</script>
+<head>
+  <meta http-equiv="refresh" content="20" />
+</head>
+
+{ break; }
+
+
+<script>
+const label = Array.from(document.querySelectorAll("label")).find(
+  (label) => label.textContent === "Ten"
+);
+
+if (label) {
+  const radioButton = document.getElementById(label.getAttribute("for"));
+
+  if (radioButton) {
+    radioButton.click();
+    const button = Array.from(document.querySelectorAll("button")).find(
+      (btn) => btn.textContent.trim() === "Vote"
+    );
+
+    if (button) {
+      button.click();
+      setTimeout(function () {
+        const mathText = document.querySelector(
+          "#captcha_14853820 p"
+        ).textContent;
+        if (mathText) {
+          const regex = /(\d+)\s*([\+\-\*\/])\s*(\d+)/;
+          const match = mathText.match(regex);
+          const num1 = parseInt(match[1], 10);
+          const operator = match[2];
+          const num2 = parseInt(match[3], 10);
+          const result = num1 + num2;
+          console.log(result);
+          document.getElementById("answer_14853820").value = result;
+          const button2 = Array.from(
+            document.querySelectorAll("button")
+          ).find((btn) => btn.textContent.trim() === "Vote");
+          button2.click();
+        }
+      }, 2000);
+    }
+  }
+}
+</script>
+<head>
+<meta http-equiv="refresh" content="10" />
+</head>
+</html>
